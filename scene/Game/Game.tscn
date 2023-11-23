@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxl2puodmon4v"]
+
+[ext_resource type="Script" path="res://scene/Game/Game.cs" id="1_fr22d"]
+[ext_resource type="Script" path="res://script/AudioPlayer/MusicPlayer.cs" id="2_g4gqx"]
+[ext_resource type="PackedScene" uid="uid://dwaya21c86eoi" path="res://scene/TestScene/TestScene.tscn" id="2_if0l0"]
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("MusicPlayer")]
+script = ExtResource("1_fr22d")
+InitialScene = ExtResource("2_if0l0")
+MusicPlayer = NodePath("MusicPlayer")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+script = ExtResource("2_g4gqx")
