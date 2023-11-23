@@ -10,10 +10,15 @@ config_version=5
 
 [application]
 
-config/name="RoguelikeDungeon"
-config/features=PackedStringArray("4.1", "Forward Plus")
+config/name="Dungeon"
+run/main_scene="res://scene/Game/Game.tscn"
+config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_height=640
 
 [dotnet]
 
-project/assembly_name="RoguelikeDungeon"
+project/assembly_name="Dungeon"
